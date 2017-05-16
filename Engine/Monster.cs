@@ -14,6 +14,7 @@ namespace Engine
         public int MaximumDamage { get; set; }
         public int RewardExperiencePoints { get; set; }
         public int RewardGold { get; set; }
+        public List<LootItem> LootTable { get; set; }
 
         // Inheriting the base class constructor
         public Monster(int id, string name, int maximumDamage, int rewardExperiencePoints, int rewardGold,
@@ -24,6 +25,7 @@ namespace Engine
             MaximumDamage = maximumDamage;
             RewardExperiencePoints = rewardExperiencePoints;
             RewardGold = rewardGold;
+            LootTable = new List<LootItem>();
         }
     }
 }
