@@ -53,6 +53,8 @@ namespace Engine
             PopulateLocations();
         }
 
+        //“Private” means that this method can only be run by other code inside this class.
+        //"Static" If you want to run a method without instantiating an object from the class, then the method needs to be static.
         private static void PopulateItems()
         {
             Items.Add(new Weapon(ITEM_ID_RUSTY_SWORD, "Rusty sword", "Rusty swords", 0, 5));
